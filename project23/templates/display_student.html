@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>display_student</h1>
+        <table border="4px">
+            <tr>
+                <th>sid</th>
+                <th>sname</th>
+                <th>email</th>
+            </tr>
+
+            {% for so in SQO %}
+            <tr>
+                <td>{{so.sid}}</td>
+                <td>{{so.sname}}</td>
+                <td>{{so.email}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
